@@ -4,5 +4,5 @@ if [ ! -f "/home/$USER/unsplash/unsplash.sh" ]; then
 else
 	mkdir -p "/home/$USER/.unsplash/default"
 	touch "/home/$USER/.unsplash/.theme"
-	if [ ! $(grep -q "alias SAMpaper=" ~/.bashrc) ]; then echo "alias SAMpaper='/unsplash/unsplash.sh'" | tee -a ~/.bashrc && source ~/.bashrc; fi
+	if [ ! $(grep -q "alias SAMpaper=" ~/.bashrc) ]; then echo "alias SAMpaper='~/unsplash/unsplash.sh'" | tee -a ~/.bashrc && source ~/.bashrc; fi
 fi
